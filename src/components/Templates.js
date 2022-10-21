@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const NewsCard = (props) => {
     return (
         
-        <a href={props.url} target="_blank" className='h-[15rem] w-52 rounded-xl p-1 flex flex-col text-center text-white m-1 bg-[#1f1d29]'>
+        <a href={props.url} target="_blank" rel="noreferrer" className='h-[15rem] w-52 rounded-xl p-1 flex flex-col text-center text-white m-1 bg-[#1f1d29]'>
             {(()=>{
                 if(props.isSvg == true)
                     return <props.img className='w-24 h-28 self-center hover:scale-110 duration-100'/>
@@ -21,7 +21,7 @@ export const NewsCard = (props) => {
 
 export const projectCard = (props) => {
     return (
-        <a href={props.url} target="_blank" className='h-[15rem] w-52 rounded-xl p-1 flex flex-col text-center text-white m-1 bg-[#1f1d29]'>
+        <a href={props.url} target="_blank" rel="noreferrer" className='h-[15rem] w-52 rounded-xl p-1 flex flex-col text-center text-white m-1 bg-[#1f1d29]'>
             {(()=>{
                 if(props.isSvg == true)
                     return <props.img className='w-24 h-28 self-center hover:scale-110 duration-100'/>
